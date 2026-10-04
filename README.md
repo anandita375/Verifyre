@@ -1,16 +1,34 @@
-# React + Vite
+# Verifyre
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Verifyre is a student focused job offer verification toolkit designed to help identify fraudulent job offers and verify companies through trusted sources. It helps students detect common scam indicators such as upfront fees, suspicious domains, and requests for sensitive documents.
 
-Currently, two official plugins are available:
+Architecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+So, here's how the Verifyre system works:
 
-## React Compiler
+->Job Offer Submission: The user provides details of a suspicious job offer, such as the company name, message, website, or other relevant information.
+->Scam Detection: The system checks the offer for common scam markers such as:
+Registration or upfront fees
+Suspicious or lookalike domains
+Requests for sensitive documents
+Other known scam patterns
+->Verify the Real Way: Instead of relying only on scam detection, Verifyre provides direct paths to verify the company through official career portals and verified company sources.
+->Scam Repository: Users can report suspicious offers, creating a crowdsourced repository that helps identify previously reported scams and emerging scam patterns.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Workflow
+Job Offer
+    ↓
+Scam Detection
+    ↓
+Company Verification
+    ↓
+Verification Result
 
-## Expanding the ESLint configuration
+Installation
+# Install dependencies
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Start the application
+npm start
+
+If your project uses React, this installation section fits the style of the Crop Watch README. If you tell me the technologies you actually used for Verifyre (e.g. React, Python, Flask, Firebase), I can make the Installation section exact.
